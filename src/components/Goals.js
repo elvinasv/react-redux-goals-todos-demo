@@ -14,9 +14,11 @@ class Goals extends React.Component {
       () => this.input.value = ''
     ))
   }
+
   removeItem = (goal) => {
     this.props.dispatch(handleDeleteGoal(goal))
   }
+  
   render() {
     return (
       <div>

@@ -16,12 +16,15 @@ class Todos extends React.Component {
       () => this.input.value = ''
     ))
   }
+
   removeItem = (todo) => {
     this.props.dispatch(handleDeleteTodo(todo))
   }
+
   toggleItem = (id) => {
     this.props.dispatch(handleToggle(id))
   }
+
   render() {
     return (
       <div>
